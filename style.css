@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#0F0722,#160935)
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo1 {
+    font-size: 40px;
+    color: #e6ddf8;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.content 
+{
+    position: relative;
+}
+.content h2
+{
+    position: absolute;
+    margin: -60px 195px;
+    color: #2e1566;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+}
+.content h2:nth-child(1)
+{
+   color: transparent; 
+   -webkit-text-stroke: 0.1px #5f2acf;
+}
+.content h2:nth-child(2)
+{
+   color: #5f2acf; 
+   animation: animate 8s ease-in-out infinite;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        clip-path: polygon(0% 41%, 7% 30%, 30% 22%, 46% 33%, 55% 45%, 64% 56%, 79% 60%, 93% 61%, 100% 56%, 100% 100%, 0% 100%);
+ 
+    }
+    50%
+    {
+        clip-path: polygon(0% 41%, 9% 54%, 32% 53%, 45% 47%, 54% 38%, 63% 30%, 76% 23%, 89% 29%, 100% 36%, 100% 100%, 0% 100%);
+    }
+}
+
+.container{
+    padding-top:200px;
+    min-height:100%;
+    text-align:center;
+  }
+  
+  .headline{
+    text-align:center;
+   
+  }
+  .headline  h1{
+      font-size:35px;
+      color:#00ff00;
+    }
+  
+  .social-buttons{
+    display:inline-block;
+    background: #2f1566a6;
+    padding:20px;
+    padding-bottom: 1px;
+    border-radius:10px;
+    text-align:center;
+    margin:5px 0px;
+    box-shadow: 0px 0px 42px -7px #5f2acf;
+  }
+    
+  /* Helper class to divide the icons */
+  .social-margin {
+    margin-right: 15px;
+  }
+  
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
+  
+  .social-icon {
+    margin-bottom: 15px;
+     box-sizing: border-box;
+    -moz-border-radius: 138px;
+    -webkit-border-radius: 138px;
+    border-radius: 138px;
+    border: 5px solid;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 1px;
+    padding-top: 11px;
+    transition: all 0.5s;
+  }
+  .social-icon:hover {
+      transform: rotate(360deg)scale(1.3);
+    }
+    /* Twitter Button Styling */
+  .twitter {
+      font-size: 22px;
+      padding-top: 10px;
+      padding-left: 2px;
+      border-color: #55acee;
+      background-color: #55acee;
+      color: #ffffff;
+      
+    }
+    .twitter:hover {
+      background-color: #ffffff;
+      color: #55acee;
+    }
+
+    /* Discord Button Styling */
+  .discord {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 2px;
+    border-color: #7289d9;
+    background-color: #7289d9;
+    color: #ffffff;
+    
+  }
+  .discord:hover {
+    background-color: #ffffff;
+    color: #7289d9;
+  }
+  
+    /* Github Button Styling */
+   .github {
+      font-size: 22px;
+      padding-top: 9px;
+      background-color: #4183c4;
+      color: #ffffff;
+      border-color: #4183c4;
+      
+    }
+    .github:hover {
+      background-color: #ffffff;
+      color: #4183c4;
+    }
+    /* Youtube Button Styling */
+   .youtube {
+      font-size: 22px;
+      padding-top: 9px;
+      padding-left: 0px;
+      background-color: #bb0000;
+      color: #ffffff;
+      border-color: #bb0000;
+      
+    }
+    .youtube  :hover {
+      background-color: #bb0000;
+      color: #ffffff;
+    }
+    /* Discord Bot Button Styling */
+  .discordbot {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 2px;
+    border-color: #7289d9;
+    background-color: #7289d9;
+    color: #ffffff;
+    
+  }
+  .discordbot:hover {
+    background-color: #ffffff;
+    color: #7289d9;
+  }
